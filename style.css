@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    color: #143774;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle{
+    font-size: .75rem;
+    font-weight: 700;
+    color: #1792D2;
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto; /*centers on screen*/
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+@media (max-width: 675px){
+    .container-nav{
+        flex-direction: column;
+    }
+
+    header{
+        text-align: center;
+    }
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
+    margin-left: 2em;
+}
+
+nav a{
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover{
+    color: #1792d2;
+    /*border-bottom: 2px solid #1792d2;*/
+}
+
+.current-page{
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover{
+    color: #707070;
+}
+
+@media (max-width: 675px){
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav li{
+        margin: .5em 0;
+    }
+}
